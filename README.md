@@ -31,8 +31,10 @@
 
    `pip install -U sip`
 
-2. 运行`MainWindow.py`启动项目
-3. 下载路径,位于更目录下的res/文件夹中
+   安装ffmpeg，并且修改`BilibiliSpider.py`文件中的`downloadVideo`方法，使得cmd命令指向有效路径
+
+3. 运行`MainWindow.py`启动项目
+4. 下载路径,位于更目录下的res/文件夹中
 
 ## 打包项目
 
