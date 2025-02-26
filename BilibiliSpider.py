@@ -164,7 +164,7 @@ class BilibiliSpider:
         audio = "..\\res\\" + self.title + "_audio.mp4"
         temp = "..\\res\\" + self.title + "_temp.mp4"
         video = audio[:-10] + '_video.mp4'
-        cmd = f'.\\lib\\ffmpeg.exe -i {audio} -i {temp} -acodec copy -vcodec copy {video}'  # 这里是调用ffmpeg  # D:\Pycharm\ffmpeg\bin\
+        cmd = f'.\\lib\\ffmpeg.exe -i {audio} -i {temp} -acodec copy -vcodec copy {video}'  # 这里是调用ffmpeg，需要下载ffmpeg
         subprocess.call(cmd, shell=True)  # 调用ffmpeg合并音频和视频
         os.remove(temp)
         os.remove(audio)
